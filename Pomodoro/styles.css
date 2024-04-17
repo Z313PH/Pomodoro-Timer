@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkmagenta;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 20px solid white; /* Thick white border */
+    box-sizing: border-box;
+}
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 597; /* This should be the circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 597; /* Initialize with the full circumference */
+}
+
+.countdown {
+    font-size: 24px;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkviolet;
+}
